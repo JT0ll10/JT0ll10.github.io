@@ -1,5 +1,5 @@
 ---
-title: My first attempts at publishing using GitHub - Josh Tollerfield
+title: My first attempts at publishing using GitHub
 layout: post
 author: josh.tollerfield
 permalink: /my-first-attempts-at-publishing-using-github---josh-tollerfield/
