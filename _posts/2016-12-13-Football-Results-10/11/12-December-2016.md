@@ -8,7 +8,7 @@ published: true
 ---
 Football Results 
 
-Premier League 
+**Premier League **
 
 **Saturday 10th December 2016**
 
@@ -34,7 +34,7 @@ Southampton           1 0  Middlesbrough
 
 Liverpool                  2 2  West Ham United 
 
-Spanish La Liga
+**Spanish La Liga**
 
 **Saturday 10th December 2016**
 
@@ -60,7 +60,7 @@ Real Betis  1 0  Athletic Bilbao
 
 Villarreal  3 0  Atletico Madrid 
 
-Italian Serie A
+**Italian Serie A**
 
 **Saturday 10th December 2016**
 
