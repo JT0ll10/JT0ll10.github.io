@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A famous american football player, founded in california. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Support Liverpool Football club. 
 
 ### Contact me
 
