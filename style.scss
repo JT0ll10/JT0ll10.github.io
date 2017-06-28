@@ -55,6 +55,19 @@ table, th{
   border-radius: 20px;
 }
 
+table, td {
+	border:2px solid black;
+	border-collapse: collapse;
+	padding: 15px; 
+	background-color: #0000ff;
+	    opacity: 1.0;
+}
+
+th{
+	background-color: #00ffff;
+} 
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $white;
