@@ -13,171 +13,204 @@
 /* BASE RULES */
 /**************/
 
+ul.img-list {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+
+ul.img-list li {
+ display: inline-block;
+ height: auto;
+ margin: 0 1em 1em 0;
+ position: relative;
+ width: 720px;
+}
+
+
+
+span.text-content span {
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+}
+
+
+
+ul.img-list li:hover span.text-content {
+ opacity: 1;
+}
+
+span.text-content {
+ background: rgba(0,0,0,0.5);
+ color: white;
+ cursor: pointer;
+ display: table;
+ height: 400px;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 720px;
+ opacity: 0;
+ -webkit-transition: opacity 1.5s;
+ -moz-transition: opacity 1.5s;
+ -o-transition: opacity 1.5s;
+ transition: opacity 1.5s;
+}
+
+
+
+
+
 html {
-  font-size: 100%;
+ font-size: 100%;
 }
 
 body {
-      background: url(https://image.shutterstock.com/z/stock-photo-lots-of-water-drops-on-a-colourful-background-5615944.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  font: 14px/1.4 $helvetica;
-  color: $white;
-}
+	background-image: url("https://image.shutterstock.com/z/stock-photo-lots-of-water-drops-on-a-colourful-background-5615944.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
 
-table{
-	width:100%;
-	margin-bottom:15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-}
-table, td{
-	border-radius:3px;
-	border-collapse: collapse;
-	padding: 15px;
-	text-align: left;
-}
-
-table, th{
-	border-radius: 3px;
-	border-collapse: collapse;
-	padding: 15px;
-	background: linear-gradient(to bottom, #000000, #0d0d0d);
-	text-align: left;
+ font: 18px/1.4 $helvetica;
+ color: $white;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 10px;
-  width: 80%;
-  background: rgba(255, 0, 0, 0.70);
-  border-radius: 20px;
+ margin: 0 auto;
+ max-width: 1000px;
+ padding: 0 10px;
+ width: 80%%;
+	background-color: rgba(255, 0, 0, 0.70);
 }
 
 table, td {
-	border:2px solid black;
-	border-collapse: collapse;
-	padding: 15px; 
-	background-color: #0000ff;
-	    opacity: 1.0;
+ border: 2px solid black;
+ border-collapse: collapse;
+ padding: 15px;
+ background-color: $green;
+	opacity: 0.8;
 }
 
-th{
-	background-color: #00ffff;
-} 
-
-
+th {
+	background-color: $palm;
+}
+	
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $white;
-  font-weight: bold;
+ font-family: $helveticaNeue;
+ color: $sand;
+ font-weight: bold;
+ &:hover, &:active {
+	color: $white;
+ 
+ }
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+ line-height: 1.7;
+ margin: 1em 0 15px;
+ padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
-  }
+ @include mobile {
+ line-height: 1.4;
+ }
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: $white;
-  }
+ font-size: 30px;
+ a {
+ color: inherit;
+ }
 }
 
 h2 {
-  font-size: 24px;
+ font-size: 24px;
 }
 
 h3 {
-  font-size: 20px;
+ font-size: 20px;
 }
 
 h4 {
-  font-size: 18px;
-  color: $white;
+ font-size: 18px;
+ color: $gray;
 }
-
+ 
 p {
-  margin: 15px 0;
+ margin: 15px 0;
 }
 
 a {
-  color: $white;
-  text-decoration: none;
+ color: $green;
+ text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
-    color: $white ;
-  }
+ &:hover, &:active {
+ color: $white;
+ }
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+ margin: 15px 0;
+ padding-left: 30px;
 }
 
 ul {
-  list-style-type: disc;
+ list-style-type: disc;
 }
 
 ol {
-  list-style-type: decimal;
+ list-style-type: decimal;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+ margin: 0;
 }
 
 ul ul, ol ul {
-  list-style-type: circle;
+ list-style-type: circle;
 }
 
 em, i {
-  font-style: italic;
+ font-style: italic;
 }
 
 strong, b {
-  font-weight: bold;
+ font-weight: bold;
 }
 
 img {
-  max-width: 100%;
+ max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
-  max-width: none;
+ max-width: none;
 }
 
 .date {
-  font-style: italic;
-  color: $white;
+ font-style: italic;
+ color: $gray;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $white;
-  background: $lightGray;
+ color: $black;
+ background: $lightGray;
 }
 ::selection {
-  color: $black;
-  background: $white;
+ color: $black;
+ background: $lightGray;
 }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+ content: " ";
+ display: table;
 }
 
 .clearfix:after {
-    clear: both;
+ clear: both;
 }
 
 /*********************/
@@ -189,90 +222,91 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+ margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+ padding: 20px 0;
+ border-bottom: 1px solid $white;
 
-  @include mobile {
-    text-align: center;
-  }
+ @include mobile {
+ text-align: center;
+ }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+ float: left;
+ width: 70px;
+ height: 70px;
+ margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+ @include mobile {
+ float: none;
+ display: block;
+ margin: 0 auto;
+ }
 
-  img {
-    border-radius: 5px;
-  }
+ img {
+ border-radius: 5px;
+ }
 }
 
 .site-info {
-  float: left;
+ float: left;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+ @include mobile {
+ float: none;
+ display: block;
+ margin: 0 auto;
+ }
 }
 
 .site-name {
-  margin: 0;
-  color: $white;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+ margin: 0;
+ color: $white;
+ cursor: pointer;
+ font-family: $helveticaNeue;
+ font-weight: 300;
+ font-size: 28px;
+ letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $white;
-  font-size: 16px;
+ margin: -5px 0 0 0;
+ color: $white;
+ font-size: 16px;
 
-  @include mobile {
-    margin: 3px 0;
-  }
+ @include mobile {
+ margin: 3px 0;
+ }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+ float: right;
+ margin-top: 23px; // @TODO: Vertically middle align
+ font-family: $helveticaNeue;
+ font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
 
-  a {
-    margin-left: 20px;
-    color: $white;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+ @include mobile {
+ float: none;
+ margin-top: 9px;
+ display: block;
+ font-size: 16px;
+ }
 
-    @include mobile {
-      margin: 0 10px;
-      color: $white;
-    }
-  }
+ a {
+ margin-left: 20px;
+ color: $white;
+ text-align: right;
+ font-weight: 300;
+ letter-spacing: 1px;
+
+ @include mobile {
+ margin: 0 10px;
+ color: $blue;
+ }
+ }
 }
 
 //
@@ -280,47 +314,48 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $white;
+ padding-bottom: 2em;
+ border-bottom: 1px solid $black;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+ padding-bottom: 1em;
+ border-bottom: none;
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $white;
-    padding: 0.1em 1em;
-    color: $white;
-    font-size: 22px;
-    font-style: italic;
-  }
+ blockquote {
+ margin: 1.8em .8em;
+ border-left: 2px solid $gray;
+ padding: 0.1em 1em;
+ color: $gray;
+ font-size: 22px;
+ font-style: italic;
+ }
 
-  .comments {
-    margin-top: 10px;
-  }
+ .comments {
+ margin-top: 10px;
+ }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
+ .read-more {
+ text-transform: uppercase;
+ font-size: 15px;
+ }
 }
 
-//.wrapper-footer {
-  // margin-top: 50px;
-  //border-top: 1px solid #ddd;
-  //border-bottom: 1px solid #ddd;
-  //background-color: $lightGray;
-//}
+.wrapper-footer {
+ margin-top: 50px;
+ border-top: 1px solid #ddd;
+ border-bottom: 1px solid #ddd;
+ background-color: $black;
+}
 
-//footer {
-  //padding: 20px 0;
-  //text-align: center;
+footer {
+ padding: 20px 0;
+ text-align: center;
+}
 
-//}
-
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
